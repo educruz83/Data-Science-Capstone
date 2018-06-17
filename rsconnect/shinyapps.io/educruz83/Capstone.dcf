@@ -1,0 +1,12 @@
+name: Capstone
+title: Capstone
+username:
+account: educruz83
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 361008
+bundleId: 1433680
+url: https://educruz83.shinyapps.io/Capstone/
+when: 1529233159.79292
+asMultiple: FALSE
+asStatic: FALSE

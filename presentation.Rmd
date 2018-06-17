@@ -1,0 +1,40 @@
+---
+title: "Coursera Data Science Capstone: Course Project"
+author: "Eduardo Cruz"
+date: "16th June 2018"
+output: ioslides_presentation
+---
+
+##Application and code
+- Shiny app is available [here](https://educruz83.shinyapps.io/Capstone/).
+
+- The code is available at [GitHub](https://github.com/educruz83/Data-Science-Capstone)
+
+##Overview
+
+- When the user enter a text input, the application is able to predict the most probable next word.
+- The app implementation is based on Swiftkey technology.
+
+
+##App Instructions
+
+- First, user may enter input text in the textbox of the left part of the application.
+
+- Then, in the right part it will be shown the predicted box.
+
+- Below, it is indicated the N-gram used to predicted it. 
+
+##Getting & Cleaning the Data
+
+- Original data comes from different sources: Blogs, Twitter and News. Since the dataset is huge a subset of the data was extracted and merged.
+- Next step was to clean the data.
+- Then,the N-gram frequencies have been prepared and the frequencies of the most common N-grams were stored in data samples.
+
+##Underlying Algorithm
+
+Confidence Metrics Based on N-Gram Language Model Backoff Behaviors. Some interesting links:
+
+- [Link 1](https://www.isca-speech.org/archive/archive_papers/eurospeech_1997/e97_2771.pdf)
+- [Link 2](http://www.cs.columbia.edu/~smaskey/CS6998-0412/supportmaterial/langmodel_mapreduce.pdf)
+
+Starting with highest order (4 due to Shiny app restrictions), it is checked if the n-gram is known. If not, the order is descarsed until some familiar text is found.
